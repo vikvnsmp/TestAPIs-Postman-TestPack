@@ -1,0 +1,177 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TestAPIs",
+		"_postman_id": "a3a1cac3-34c5-b2ab-880f-64e163fd40a6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TestAPIs",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8085/TestAPIs/createUser/",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/createUser/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"0\",\n\t\"fName\":\"Saurabh\",\n\t\"lName\":\"Thakral\",\n\t\"email\":\"gg12@gmail.com\",\n\t\"pinCode\":570021,\n\t\"birthDate\":\"29-DEC-2016\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/TestAPIs/updateUser/1001/606011/22-OCT-2018",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/updateUser/1001/606011/22-OCT-2018",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Birthdate as future date."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/TestAPIs/updateUser/1002/606011/22-OCT-2017",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/updateUser/1002/606011/22-OCT-2017",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "User id doesn't exist."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/TestAPIs/updateUser/1001/606011/22-OCT-2017",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/updateUser/1001/606011/22-OCT-2017",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "User id deleted/deactivated."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8085/TestAPIs/createUser/",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/createUser/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"0\",\n\t\"fName\":\"Saurabh\",\n\t\"lName\":\"Thakral\",\n\t\"email\":\"gg12@gmail.com\",\n\t\"pinCode\":570021,\n\t\"birthDate\":\"29-DEC-2016\"\n}"
+						},
+						"description": "New user added."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8086/TestAPIs/deleteUser/1005",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/deleteUser/1005",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"0\",\n\t\"fName\":\"Saurabh\",\n\t\"lName\":\"Thakral\",\n\t\"email\":\"gg12@gmail.com\",\n\t\"pinCode\":570021,\n\t\"birthDate\":\"29-DEC-2016\"\n}"
+						},
+						"description": "Delete user - User Id doesn't exist."
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8086/TestAPIs/deleteUser/1002",
+					"request": {
+						"url": "http://localhost:8086/TestAPIs/deleteUser/1002",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"0\",\n\t\"fName\":\"Saurabh\",\n\t\"lName\":\"Thakral\",\n\t\"email\":\"gg12@gmail.com\",\n\t\"pinCode\":570021,\n\t\"birthDate\":\"29-DEC-2016\"\n}"
+						},
+						"description": "User deleted/deactivated."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8085/TestAPIs/createUser/",
+			"request": {
+				"url": "http://localhost:8086/TestAPIs/createUser/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"0\",\n\t\"fName\":\"Saurabh\",\n\t\"lName\":\"Thakral\",\n\t\"email\":\"gg12@gmail.com\",\n\t\"pinCode\":570021,\n\t\"birthDate\":\"29-DEC-2017\"\n}"
+				},
+				"description": "Birthdate as future date."
+			},
+			"response": []
+		}
+	]
+}
